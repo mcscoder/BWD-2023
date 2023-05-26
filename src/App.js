@@ -1,8 +1,23 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+
+import UserLayout from "./layout/UserLayout";
+import Home from "./pages/home";
 
 
 function App() {
   return (
-    <h1 className="text-3xl underline">hello</h1>
+    <Router>
+      <Routes>
+        <Route path="/"
+          element={
+            <UserLayout>
+              <Home />
+            </UserLayout>
+          }>
+        </Route>
+      </Routes>
+    </Router>
   );
 }
 
