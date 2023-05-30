@@ -1,9 +1,47 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"); */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --font-family: "Open Sans", sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+a {
+    color: #fff;
+}
+
+input,
+button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+button {
+    cursor: pointer;
+}
+
+.active {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.bg-home {
+    background: linear-gradient(-45deg,
+            #9FDC6E 0%,
+            #FBFEF9 100%, #ace77d 0%);
+
+    border-radius: 43px;
 }
