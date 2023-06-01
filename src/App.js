@@ -2,10 +2,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 
 import UserLayout from "./layout/UserLayout";
-import Home from "./pages/home";
-import Search from "./pages/search";
-import Info from "./pages/info";
-import Chart from "./pages/chart";
 import { publicRoutes } from "./routers/routes";
 
 
